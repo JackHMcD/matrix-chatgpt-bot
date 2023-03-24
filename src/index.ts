@@ -75,8 +75,6 @@ async function main() {
     LogService.info("index", `Bot joined room ${roomId}`);
     if(MATRIX_WELCOME) {
       await client.sendMessage(roomId, {
-        "msgtype": "m.notice",
-        "body": `👋 Hello, I'm ChatGPT bot! Matrix E2EE: ${MATRIX_ENCRYPTION}`,
       });
     }
   });

@@ -73,10 +73,6 @@ async function main() {
 
   client.on("room.join", async (roomId: string, _event: any) => {
     LogService.info("index", `Bot joined room ${roomId}`);
-    if(MATRIX_WELCOME) {
-      await client.sendMessage(roomId, {
-      });
-    }
   });
 
   // Prepare the command handler
